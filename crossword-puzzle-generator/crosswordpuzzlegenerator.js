@@ -1,4 +1,4 @@
-const attemptsToFitWords = 5000;
+const attemptsToFitWords = 50000;
 const gridsToMake = 20;
 const gridSize = 20;
 
@@ -118,14 +118,14 @@ let createCrossWordPuzzle = function()
                 {
                     continuousFails++;
                 }
-                if( continuousFails > 470 )
+                if( continuousFails > 4700 )
                 {
                     break;
                 }
             }
 
             generatedGrids.push( grid );
-            if( grid.getIntersections() >= 4 )
+            if( grid.getIntersections() >= 40 )
             {
                 break;
             }
